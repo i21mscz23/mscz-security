@@ -1,0 +1,44 @@
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+.idea/
+
+###project###
+logs/
+
+
+mscz-security-app/*.iml
+mscz-security-app/.idea
+mscz-security-app/target
+
+mscz-security-core/*.iml
+mscz-security-core/.idea
+mscz-security-core/target
+
+mscz-security-server/*.iml
+mscz-security-server/.idea
+mscz-security-server/target
+
+mscz-security-token/*.iml
+mscz-security-token/.idea
+mscz-security-token/target
