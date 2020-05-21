@@ -35,6 +35,10 @@ mscz-security-core/*.iml
 mscz-security-core/.idea
 mscz-security-core/target
 
+mscz-security-resource/*.iml
+mscz-security-resource/.idea
+mscz-security-resource/target
+
 mscz-security-server/*.iml
 mscz-security-server/.idea
 mscz-security-server/target

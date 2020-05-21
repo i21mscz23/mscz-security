@@ -1,7 +1,7 @@
-package com.mscz.config;
+package com.mscz.config.resource;
 
-import com.mscz.oauth2.handler.GatewayAccessDeniedHandler;
-import com.mscz.oauth2.handler.GatewayAuthenticationEntryPoint;
+import com.mscz.handler.GatewayAccessDeniedHandler;
+import com.mscz.handler.GatewayAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
@@ -9,20 +9,20 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
 
 /**
- * @Description
+ * @Description 资源服务配置
  * @Author lixiao
  * @Date 2020/5/18 17:19
  */
-@Configuration
-@EnableResourceServer
+//@Configuration
+//@EnableResourceServer
 public class OAuth2ResourceConfiguration extends ResourceServerConfigurerAdapter {
 
 
 
-    @Autowired
+//    @Autowired
     private GatewayAccessDeniedHandler accessDeniedHandler;
 
-    @Autowired
+//    @Autowired
     private GatewayAuthenticationEntryPoint authenticationEntryPoint;
 
     @Override

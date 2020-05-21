@@ -1,0 +1,11 @@
+server:
+  port: 5666
+
+security:
+  oauth2:
+    client:
+      client-id: proxy
+      client-secret: 123456
+    resource:
+      jwt:
+        key-uri: http://localhost:8111/oauth/token_key

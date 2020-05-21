@@ -1,4 +1,4 @@
-package com.mscz.config;
+package com.mscz.config.authorization;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

@@ -13,6 +13,7 @@
         <module>mscz-security-app</module>
         <module>mscz-security-token</module>
         <module>mscz-security-server</module>
+        <module>mscz-resource</module>
     </modules>
 
 

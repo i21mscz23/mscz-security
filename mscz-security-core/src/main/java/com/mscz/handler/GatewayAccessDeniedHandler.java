@@ -1,4 +1,4 @@
-package com.mscz.oauth2.handler;
+package com.mscz.handler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.MediaType;

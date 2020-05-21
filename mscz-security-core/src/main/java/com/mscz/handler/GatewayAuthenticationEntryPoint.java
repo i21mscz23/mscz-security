@@ -1,4 +1,4 @@
-package com.mscz.oauth2.handler;
+package com.mscz.handler;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.http.MediaType;
