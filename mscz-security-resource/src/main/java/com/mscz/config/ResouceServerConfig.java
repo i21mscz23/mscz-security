@@ -12,8 +12,8 @@ import org.springframework.security.web.access.ExceptionTranslationFilter;
  * @Author lixiao
  * @Date 2020/5/21 15:55
  */
-@Configuration
-@EnableResourceServer
+//@Configuration
+//@EnableResourceServer
 public class ResouceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override

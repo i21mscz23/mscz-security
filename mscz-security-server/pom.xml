@@ -19,13 +19,13 @@
 
         <!--<dependency>
             <groupId>com.mscz</groupId>
-            <artifactId>mscz-security-token</artifactId>
+            <artifactId>mscz-security-core</artifactId>
             <version>${mscz-security.version}</version>
         </dependency>-->
 
         <dependency>
             <groupId>com.mscz</groupId>
-            <artifactId>mscz-security-app</artifactId>
+            <artifactId>mscz-security-token</artifactId>
             <version>${mscz-security.version}</version>
         </dependency>
     </dependencies>

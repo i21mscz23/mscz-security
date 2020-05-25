@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @Description
  * @Author lixiao
- * @Date 2020/5/16 14:59
+ * @Date 2020/5/23 16:55
  */
 @SpringBootApplication
-public class ServerApplication {
+public class SocialApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServerApplication.class,args);
+        SpringApplication.run(SocialApplication.class,args);
     }
 }

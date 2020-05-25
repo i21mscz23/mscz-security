@@ -27,9 +27,9 @@
 logs/
 
 
-mscz-security-app/*.iml
-mscz-security-app/.idea
-mscz-security-app/target
+mscz-security-authorize/*.iml
+mscz-security-authorize/.idea
+mscz-security-authorize/target
 
 mscz-security-core/*.iml
 mscz-security-core/.idea
@@ -42,6 +42,10 @@ mscz-security-resource/target
 mscz-security-server/*.iml
 mscz-security-server/.idea
 mscz-security-server/target
+
+mscz-security-social/*.iml
+mscz-security-social/.idea
+mscz-security-social/target
 
 mscz-security-token/*.iml
 mscz-security-token/.idea

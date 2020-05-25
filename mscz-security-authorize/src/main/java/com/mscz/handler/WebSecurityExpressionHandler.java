@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
  * @Author lixiao
  * @Date 2019/10/18 10:55
  */
-@Component
-public class GatewayWebSecurityExpressionHandler extends OAuth2WebSecurityExpressionHandler {
+@Component("authorizeExpressionHandler")
+public class WebSecurityExpressionHandler extends OAuth2WebSecurityExpressionHandler {
 
 
     @Autowired

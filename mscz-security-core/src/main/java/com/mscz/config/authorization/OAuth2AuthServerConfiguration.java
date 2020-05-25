@@ -70,7 +70,13 @@ public class OAuth2AuthServerConfiguration extends AuthorizationServerConfigurer
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory().withClient("proxy").secret(passwordEncoder.encode("123456")).scopes("read","write")/*.accessTokenValiditySeconds(3600).resourceIds("app")*/.authorizedGrantTypes("password");
+        clients.inMemory()
+                .withClient("proxy")
+                .secret(passwordEncoder.encode("123456"))
+                .scopes("read","write")
+                .accessTokenValiditySeconds(3600)
+                .refreshTokenValiditySeconds(7200)/*.resourceIds("app")*/
+                .authorizedGrantTypes("password","refresh_token");
     }
 
     @Override

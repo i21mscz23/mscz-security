@@ -8,14 +8,18 @@
         <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>mscz-security-app</artifactId>
+    <description>权限模块</description>
+    <artifactId>mscz-security-authorize</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>com.mscz</groupId>
-            <artifactId>mscz-security-core</artifactId>
-            <version>${mscz-security.version}</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
         </dependency>
     </dependencies>
 

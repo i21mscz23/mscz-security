@@ -17,7 +17,7 @@ import java.io.IOException;
  * @Date 2019/10/18 16:17
  */
 @Component
-public class GatewayAccessDeniedHandler extends OAuth2AccessDeniedHandler {
+public class AccessDeniedHandler extends OAuth2AccessDeniedHandler {
 
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException authException) throws IOException, ServletException {

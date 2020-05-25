@@ -9,3 +9,6 @@ security:
     resource:
       jwt:
         key-uri: http://localhost:8111/oauth/token_key
+spring:
+  main:
+    allow-bean-definition-overriding: true
