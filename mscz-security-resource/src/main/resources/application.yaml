@@ -4,11 +4,12 @@ server:
 security:
   oauth2:
     client:
-      client-id: proxy
+      client-id: cloud
       client-secret: 123456
     resource:
       jwt:
-        key-uri: http://localhost:8111/oauth/token_key
+        key-value: 123456
+#        key-uri: http://localhost:8123/oauth/token_key
 spring:
   main:
     allow-bean-definition-overriding: true

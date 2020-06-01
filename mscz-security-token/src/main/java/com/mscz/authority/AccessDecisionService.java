@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 public class AccessDecisionService implements PermissionService{
 
     public boolean hasPermission(HttpServletRequest request, Authentication auth) {
-        return false;
+        return true;
     }
 
 }

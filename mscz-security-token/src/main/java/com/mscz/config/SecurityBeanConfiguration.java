@@ -46,7 +46,7 @@ public class SecurityBeanConfiguration {
     }
 
     @Bean
-    public RsaSigner rsaSigner(KeyPair genKeyPair) throws Exception {
+    public RsaSigner rsaSigner() throws Exception {
 
 //        return new RsaSigner((RSAPrivateKey)genKeyPair.getPrivate());
         return new RsaSigner((RSAPrivateKey) getPrivateKey("classpath:i21mscz23.key", "i21mscz23", "lx63024477", "lx63024477"));
@@ -54,7 +54,7 @@ public class SecurityBeanConfiguration {
     }
 
     @Bean
-    public RsaVerifier getVerifier(KeyPair genKeyPair)  {
+    public RsaVerifier getVerifier()  {
 //        return new RsaVerifier((RSAPublicKey)genKeyPair.getPublic());
         return new RsaVerifier((RSAPublicKey) getPublicKey("classpath:i21mscz23.key", "i21mscz23", "lx63024477"));
 //        return new RsaVerifier(PRIVATE_KEY);

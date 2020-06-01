@@ -1,0 +1,11 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/mscz-security?characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true
+    username: root
+    password: i21mscz23
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8123

@@ -6,12 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @Description
  * @Author lixiao
- * @Date 2020/5/16 14:59
+ * @Date 2020/5/28 09:45
  */
 @SpringBootApplication
-public class ServerApplication {
+public class SimpleTokenApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServerApplication.class,args);
+        SpringApplication.run(SimpleTokenApplication.class,args);
     }
 }

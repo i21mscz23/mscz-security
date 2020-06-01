@@ -15,6 +15,7 @@ import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 
+import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,14 +28,11 @@ import java.util.List;
 @EnableAuthorizationServer
 public class OAuth2AuthServerConfiguration extends AuthorizationServerConfigurerAdapter {
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
-
     @Autowired(required = false)
     private TokenEnhancer jwtTokenEnhancerEnhance;
 
     @Autowired
-    private UserDetailsService userDetailsService;
+    private UserDetailsService jdbcDetailsService;
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -45,6 +43,8 @@ public class OAuth2AuthServerConfiguration extends AuthorizationServerConfigurer
     @Autowired
     private JwtAccessTokenConverter jwtTokenEnhancer;
 
+    @Autowired
+    private DataSource dataSource;
 
 
     @Override
@@ -61,7 +61,7 @@ public class OAuth2AuthServerConfiguration extends AuthorizationServerConfigurer
         enhancerChain.setTokenEnhancers(enhancers);
 
         endpoints
-                .userDetailsService(userDetailsService)
+                .userDetailsService(jdbcDetailsService)
                 .tokenStore(tokenStore)
                 .tokenEnhancer(enhancerChain)
                 .accessTokenConverter(jwtTokenEnhancer)
@@ -70,13 +70,16 @@ public class OAuth2AuthServerConfiguration extends AuthorizationServerConfigurer
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory()
+        /*基于jdbc*/
+        clients.jdbc(dataSource);
+        //基于内存模式
+        /*clients.inMemory()
                 .withClient("proxy")
                 .secret(passwordEncoder.encode("123456"))
                 .scopes("read","write")
                 .accessTokenValiditySeconds(3600)
-                .refreshTokenValiditySeconds(7200)/*.resourceIds("app")*/
-                .authorizedGrantTypes("password","refresh_token");
+                .refreshTokenValiditySeconds(7200)
+                .authorizedGrantTypes("password","refresh_token");*/
     }
 
     @Override

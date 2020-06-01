@@ -53,6 +53,7 @@ public class JwtAuthenticationSecurityConfig extends SecurityConfigurerAdapter<D
 
         builder.authenticationProvider(jwtAuthenticationProvider)
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+                //请求结构拦截
                 .addFilterAfter(authenticationFilter,JwtAuthenticationFilter.class);
     }
 }

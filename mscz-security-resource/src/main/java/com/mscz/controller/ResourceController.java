@@ -1,5 +1,6 @@
 package com.mscz.controller;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +14,7 @@ public class ResourceController {
 
 
     @GetMapping("/resource")
-    public Object resource(){
-        return "resouce";
+    public Object resource(Authentication authentication){
+        return authentication;
     }
 }

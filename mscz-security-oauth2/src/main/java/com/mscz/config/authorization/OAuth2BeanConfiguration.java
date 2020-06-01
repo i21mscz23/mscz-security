@@ -36,8 +36,8 @@ public class OAuth2BeanConfiguration {
         //通过字符串方式加密
         converter.setSigningKey("123456");
         //通过秘钥方式加密
-//        KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource(KEY_FILE_NAME), KEY_PASSWORD.toCharArray());
-//        converter.setKeyPair(keyStoreKeyFactory.getKeyPair(KEY_ALIAS));
+        /*KeyStoreKeyFactory keyStoreKeyFactory = new KeyStoreKeyFactory(new ClassPathResource(KEY_FILE_NAME), KEY_PASSWORD.toCharArray());
+        converter.setKeyPair(keyStoreKeyFactory.getKeyPair(KEY_ALIAS));*/
         return converter;
     }
 

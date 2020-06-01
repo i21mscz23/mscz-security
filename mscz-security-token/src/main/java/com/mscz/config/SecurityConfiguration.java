@@ -39,7 +39,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         http.formLogin()
                 .loginPage("/require")
-                .loginProcessingUrl("/jwt/login")
+//                .loginProcessingUrl("/jwt/login")
                 .successHandler(loginSuccessHandler)
                 .failureHandler(loginFailureHandler);
 

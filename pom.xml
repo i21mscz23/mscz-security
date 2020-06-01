@@ -9,9 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>mscz-security-core</module>
+        <module>mscz-security-oauth2</module>
         <module>mscz-security-token</module>
-        <module>mscz-security-server</module>
         <module>mscz-security-resource</module>
         <module>mscz-security-authorize</module>
         <module>mscz-security-social</module>

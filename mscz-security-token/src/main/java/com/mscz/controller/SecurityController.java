@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Description
+ * @Description 接口，验证是否需要用户信息
  * @Author lixiao
  * @Date 2020/5/16 15:02
  */

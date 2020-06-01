@@ -31,17 +31,13 @@ mscz-security-authorize/*.iml
 mscz-security-authorize/.idea
 mscz-security-authorize/target
 
-mscz-security-core/*.iml
-mscz-security-core/.idea
-mscz-security-core/target
+mscz-security-oauth2/*.iml
+mscz-security-oauth2/.idea
+mscz-security-oauth2/target
 
 mscz-security-resource/*.iml
 mscz-security-resource/.idea
 mscz-security-resource/target
-
-mscz-security-server/*.iml
-mscz-security-server/.idea
-mscz-security-server/target
 
 mscz-security-social/*.iml
 mscz-security-social/.idea

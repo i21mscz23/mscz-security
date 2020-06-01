@@ -31,12 +31,15 @@ public class OAuth2ResourceConfiguration extends ResourceServerConfigurerAdapter
     @Autowired
     private WebSecurityExpressionHandler authorizeExpressionHandler;
 
+
+
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
         resources
                 .authenticationEntryPoint(authenticationEntryPoint)
                 .accessDeniedHandler(accessDeniedHandler)
                 .expressionHandler(authorizeExpressionHandler);
+
     }
 
     @Override
@@ -48,4 +51,5 @@ public class OAuth2ResourceConfiguration extends ResourceServerConfigurerAdapter
 //                .antMatchers("/oauth2/**").permitAll()
                 .anyRequest().access("#permissionService.hasPermission(request, authentication)");
     }
+
 }
